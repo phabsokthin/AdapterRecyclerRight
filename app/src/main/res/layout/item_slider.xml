@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp">
+
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/image_slide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorSelectedColor="#2196F3"
+            app:sliderIndicatorUnselectedColor="#009688"
+            app:sliderScrollTimeInSec="1"
+            app:sliderIndicatorRadius="3dp"
+            app:sliderAnimationDuration="600"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderIndicatorGravity="center|bottom"/>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
